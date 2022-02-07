@@ -1,0 +1,1 @@
+kubectl run -it --rm --image=mysql --restart=Never mysql-client -- mysql --host mysql --password=123456

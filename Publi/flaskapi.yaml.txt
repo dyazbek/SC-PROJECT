@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Job
+metadata:
+  name: flask-api
+spec:
+  template:
+    metadata:
+      name: flask-api-pod
+    spec:
+      containers:
+      - name: flask-api
+        image: flask-api
+      restartPolicy: Never
